@@ -1,0 +1,114 @@
+<supermercados>
+    <supermercado>
+        <id>1</id>
+        <nombre>Mercadona</nombre>
+        <direccion>Calle Ferraz 30</direccion>
+        <geolocalizacion>
+            <lat>27.411349</lat>
+            <long>56.392913</long>
+        </geolocalizacion>
+        <productos>
+            <producto>
+                <nombre>Cerezas</nombre>
+                <oferta>true</oferta>
+                <periodoVigencia>01/06/2023 - 30/09/2023</periodoVigencia>
+                <uds>300</uds>
+                <udMedida>kg</udMedida>
+                <precio>4.99</precio>
+                <adquirido>false</adquirido>
+            </producto>
+            <producto>
+                <nombre>Pan de semillas</nombre>
+                <oferta>true</oferta>
+                <periodoVigencia>Siempre</periodoVigencia>
+                <uds>500</uds>
+                <udMedida>Paquetes</udMedida>
+                <precio>1.39</precio>
+                <adquirido>true</adquirido>
+            </producto>
+        </productos>
+        <ofertas>
+            <oferta>3x2 en Pan de Semillas</oferta>
+            <oferta>2 + 1 gratis en limones</oferta>
+        </ofertas>
+        <productosHab>
+            <producto>Leche</producto>
+            <producto>Aceite</producto>
+            <producto>Harina</producto>
+        </productosHab>
+    </supermercado>
+    <supermercado>
+        <id>2</id>
+        <nombre>Lidl</nombre>
+        <direccion>Avda Los Sauces 82</direccion>
+        <geolocalizacion>
+            <lat>-3.54291</lat>
+            <long>34.39203</long>
+        </geolocalizacion>
+        <productos>
+            <producto>
+                <nombre>Limones</nombre>
+                <oferta>false</oferta>
+                <periodoVigencia>Siempre</periodoVigencia>
+                <uds>300</uds>
+                <udMedida>kg</udMedida>
+                <precio>1.99</precio>
+                <adquirido>true</adquirido>
+            </producto>
+            <producto>
+                <nombre>Tortitas de trigo</nombre>
+                <oferta>true</oferta>
+                <periodoVigencia>Siempre</periodoVigencia>
+                <uds>500</uds>
+                <udMedida>Paquetes</udMedida>
+                <precio>0.78</precio>
+                <adquirido>true</adquirido>
+            </producto>
+        </productos>
+        <ofertas>
+            <oferta>3x2 en Tortitas de trigo</oferta>
+            <oferta>2 + 1 gratis en limones</oferta>
+        </ofertas>
+        <productosHab>
+            <producto>Agua</producto>
+            <producto>Aceite</producto>
+            <producto>Harina</producto>
+        </productosHab>
+    </supermercado>
+    <supermercado>
+        <id>3</id>
+        <nombre>El Corte Inglés</nombre>
+        <direccion>Avda de la Estacion 30</direccion>
+        <geolocalizacion>
+            <lat>40.23204</lat>
+            <long>-3.020495</long>
+        </geolocalizacion>
+        <productos>
+            <producto>
+                <nombre>Granadas</nombre>
+                <oferta>false</oferta>
+                <periodoVigencia>01/10/2023 - 15/01/2024</periodoVigencia>
+                <uds>300</uds>
+                <udMedida>kg</udMedida>
+                <precio>2.99</precio>
+                <adquirido>true</adquirido>
+            </producto>
+            <producto>
+                <nombre>Mantequilla</nombre>
+                <oferta>false</oferta>
+                <periodoVigencia>Siempre</periodoVigencia>
+                <uds>500</uds>
+                <udMedida>Paquetes</udMedida>
+                <precio>1.07</precio>
+                <adquirido>false</adquirido>
+            </producto>
+        </productos>
+        <ofertas/>
+        <productosHab>
+            <producto>Agua</producto>
+            <producto>Chocolate</producto>
+            <producto>Aceite</producto>
+            <producto>Harina</producto>
+        </productosHab>
+    </supermercado>
+</supermercados>

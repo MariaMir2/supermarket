@@ -1,0 +1,98 @@
+{
+    "$schema": "./supermercados.schema.json",
+    "supermercados" : [
+        {
+            "id" : 1,
+            "nombre" : "Mercadona",
+            "direccion" : "Calle Ferraz 30",
+            "geolocalizacion" : {
+                "lat" : 27.411349,
+                "long" : 56.392913
+            },
+            "productos" : [
+                {
+                    "nombre" : "Cerezas",
+                    "oferta" : true,
+                    "periodoVigencia" : "01/06/2023 - 30/09/2023",
+                    "uds" : 300,
+                    "udMedida" : "kg",
+                    "precio" : 4.99,
+                    "adquirido" : false
+                },
+                {
+                    "nombre" : "Pan de semillas",
+                    "oferta" : true,
+                    "periodoVigencia" : "Siempre",
+                    "uds" : 500,
+                    "udMedida" : "Paquetes",
+                    "precio" : 1.39,
+                    "adquirido" : true
+                }
+            ],
+            "ofertas" : ["3x2 en Pan de Semillas", "2 + 1 gratis en limones"],
+            "productosHab" : ["Leche", "Aceite", "Harina"]
+        },
+        {
+            "id" : 2,
+            "nombre" : "Lidl",
+            "direccion" : "Avda Los Sauces 82",
+            "geolocalizacion" : {
+                "lat" : -3.54291,
+                "long" : 34.39203
+            },
+            "productos" : [
+                {
+                    "nombre" : "Limones",
+                    "oferta" : false,
+                    "periodoVigencia" : "Siempre",
+                    "uds" : 300,
+                    "udMedida" : "kg",
+                    "precio" : 1.99,
+                    "adquirido" : true
+                },
+                {
+                    "nombre" : "Tortitas de trigo",
+                    "oferta" : true,
+                    "periodoVigencia" : "Siempre",
+                    "uds" : 500,
+                    "udMedida" : "Paquetes",
+                    "precio" : 0.78,
+                    "adquirido" : true
+                }
+            ],
+            "ofertas" : ["3x2 en Tortitas de trigo", "2 + 1 gratis en limones"],
+            "productosHab" : ["Agua", "Aceite", "Harina"]
+        },
+        {
+            "id" : 3,
+            "nombre" : "El Corte Inglés",
+            "direccion" : "Avda de la Estacion 30",
+            "geolocalizacion" : {
+                "lat" : 40.23204,
+                "long" : -3.020495
+            },
+            "productos" : [
+                {
+                    "nombre" : "Granadas",
+                    "oferta" : false,
+                    "periodoVigencia" : "01/10/2023 - 15/01/2024",
+                    "uds" : 300,
+                    "udMedida" : "kg",
+                    "precio" : 2.99,
+                    "adquirido" : true
+                },
+                {
+                    "nombre" : "Mantequilla",
+                    "oferta" : false,
+                    "periodoVigencia" : "Siempre",
+                    "uds" : 500,
+                    "udMedida" : "Paquetes",
+                    "precio" : 1.07,
+                    "adquirido" : false
+                }
+            ],
+            "ofertas" : [],
+            "productosHab" : ["Agua", "Chocolate", "Aceite", "Harina"]
+        }
+    ]
+}
