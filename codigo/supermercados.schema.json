@@ -1,0 +1,90 @@
+{
+    "$id": "https://example.com/supermercados.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "description": "Un schema para validar los supermercados",
+    "type" : "object",
+    "required" : ["supermercados"],
+    "properties": {
+        "supermercados" : {
+            "description" : "Lista de los supermercados disponibles",
+            "type" : "array",
+            "items" : {
+                "type": "object",
+                "description": "Cada uno de los supermercados",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "description": "Id que identifica al supermercado"
+                    },
+                    "nombre": {
+                        "type": "string",
+                        "description": "Nombre del supermercado"
+                    },
+                    "direccion": {
+                        "type": "string",
+                        "description": "Direccion del súper"
+                    },
+                    "geolocalizacion": {
+                        "type": "object",
+                        "description": "ubicacion geográfica del súper",
+                        "properties": {
+                            "lat": {
+                                "type": "number"
+                            },
+                            "long": {
+                                "type": "number"
+                            }
+                        },
+                        "required": ["lat", "long"]
+                    },
+                    "productos": {
+                        "type": "array",
+                        "description": "Lista de los productos disponibles en el super",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "nombre": {
+                                    "type": "string"
+                                },
+                                "oferta": {
+                                    "type": "boolean"
+                                },
+                                "periodoVigencia": {
+                                    "type": "string"
+                                },
+                                "uds": {
+                                    "type": "integer"
+                                },
+                                "udMedida": {
+                                    "type": "string"
+                                },
+                                "precio": {
+                                    "type": "number"
+                                },
+                                "adquirido": {
+                                    "type": "boolean"
+                                }
+                            },
+                        "required": ["nombre", "oferta", "periodoVigencia", "uds", "udMedida", "precio", "adquirido"]
+                        }
+                    },
+                    "ofertas": {
+                        "description": "Ofertas que tiene actualmente el super",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "productosHab": {
+                        "description": "Productos habituales del supermercado sin oferta",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "required": ["id", "nombre", "direccion", "geolocalizacion", "productos", "ofertas", "productosHab"]
+            }
+        }
+    }
+}
